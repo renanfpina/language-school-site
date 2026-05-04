@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact LingoUp Academy — enroll in English, Spanish or Mandarin courses, book a free trial class or ask any questions. We reply within 24 hours." />
+  <meta property="og:title"       content="Contact &amp; Enrollment — LingoUp Academy" />
+  <meta property="og:description" content="Ready to start? Fill in the form and we'll be in touch within 24 hours. First trial class is free." />
+  <meta property="og:type"        content="website" />
+  <title>Contact &amp; Enrollment — LingoUp Academy</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+</head>
+<body>
+
+  <header></header>
+
+  <main id="main-content">
+
+    <!-- ================================================
+         Page Hero
+         ================================================ -->
+    <section class="page-hero" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="page-hero__label" data-i18n="contact.page_label">Get in touch</p>
+        <h1 class="page-hero__title" id="contact-title" data-i18n="contact.page_title">Enroll or Contact Us</h1>
+        <p class="page-hero__subtitle" data-i18n="contact.page_sub">
+          Have a question? Ready to start? Fill in the form and we'll get back to you within 24 hours.
+        </p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span class="breadcrumb__current" data-i18n="contact.breadcrumb">Contact</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ================================================
+         Contact Grid: Info + Form
+         ================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact Info -->
+          <div>
+            <h2 class="section-title" style="margin-bottom:var(--space-8);" data-i18n="contact.info_title">Contact information</h2>
+
+            <div class="contact-info__item">
+              <i class="ph ph-map-pin contact-info__icon" aria-hidden="true"></i>
+              <div>
+                <p class="contact-info__label">Address</p>
+                <p class="contact-info__value">340 N Michigan Ave, Suite 500<br>Chicago, IL 60601, USA</p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <i class="ph ph-phone contact-info__icon" aria-hidden="true"></i>
+              <div>
+                <p class="contact-info__label">Phone &amp; WhatsApp</p>
+                <p class="contact-info__value">+1 (555) 234-5678</p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <i class="ph ph-envelope contact-info__icon" aria-hidden="true"></i>
+              <div>
+                <p class="contact-info__label">Email</p>
+                <p class="contact-info__value">hello@lingoup.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <i class="ph ph-clock contact-info__icon" aria-hidden="true"></i>
+              <div>
+                <p class="contact-info__label">Office Hours</p>
+                <p class="contact-info__value" data-i18n="footer.hours">Mon–Fri, 8am–8pm</p>
+              </div>
+            </div>
+
+            <!-- Social links -->
+            <div style="margin-top:var(--space-8);">
+              <p style="font-family:var(--font-heading);font-size:var(--fs-sm);font-weight:var(--fw-semibold);color:var(--color-text);margin-bottom:var(--space-4);">Follow us</p>
+              <div style="display:flex;gap:var(--space-3);">
+                <a href="#" class="footer__social-link" style="background-color:var(--color-surface);color:var(--color-text);" aria-label="Instagram">
+                  <i class="ph ph-instagram-logo" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="footer__social-link" style="background-color:var(--color-surface);color:var(--color-text);" aria-label="LinkedIn">
+                  <i class="ph ph-linkedin-logo" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="footer__social-link" style="background-color:var(--color-surface);color:var(--color-text);" aria-label="YouTube">
+                  <i class="ph ph-youtube-logo" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Map placeholder -->
+            <div class="map-placeholder" style="margin-top:var(--space-8);" role="img" aria-label="Map showing LingoUp Academy location in Chicago">
+              <i class="ph ph-map-trifold" aria-hidden="true"></i>
+              <span>340 N Michigan Ave, Chicago</span>
+            </div>
+          </div>
+
+          <!-- Enrollment Form -->
+          <div>
+            <h2 class="section-title" style="margin-bottom:var(--space-8);" data-i18n="contact.form_title">Send us a message</h2>
+
+            <!-- ARIA live region for form feedback -->
+            <div id="form-live-region" role="status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+
+            <form id="enrollment-form" novalidate aria-label="Enrollment and contact form">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5);margin-bottom:var(--space-5);">
+
+                <div class="form-group">
+                  <label class="form-label" for="name" data-i18n="contact.name_label">Full name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    autocomplete="name"
+                    aria-required="true"
+                    data-i18n-attr="placeholder:contact.name_label"
+                    placeholder="Full name"
+                  />
+                  <span class="form-error" id="name-error" role="alert" hidden></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="email" data-i18n="contact.email_label">Email address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    autocomplete="email"
+                    aria-required="true"
+                    data-i18n-attr="placeholder:contact.email_label"
+                    placeholder="Email address"
+                  />
+                  <span class="form-error" id="email-error" role="alert" hidden></span>
+                </div>
+
+              </div>
+
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5);margin-bottom:var(--space-5);">
+
+                <div class="form-group">
+                  <label class="form-label" for="phone" data-i18n="contact.phone_label">Phone (optional)</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-control"
+                    autocomplete="tel"
+                    data-i18n-attr="placeholder:contact.phone_label"
+                    placeholder="Phone (optional)"
+                  />
+                  <span class="form-error" id="phone-error" role="alert" hidden></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="language" data-i18n="contact.lang_label">Language of interest</label>
+                  <select id="language" name="language" class="form-control" aria-required="true">
+                    <option value="" data-i18n="contact.lang_ph">Select a language</option>
+                    <option value="english"  data-i18n="footer.english">English</option>
+                    <option value="spanish"  data-i18n="footer.spanish">Spanish</option>
+                    <option value="mandarin" data-i18n="footer.mandarin">Mandarin</option>
+                  </select>
+                  <span class="form-error" id="language-error" role="alert" hidden></span>
+                </div>
+
+              </div>
+
+              <div class="form-group" style="margin-bottom:var(--space-5);">
+                <label class="form-label" for="level" data-i18n="contact.level_label">Current level</label>
+                <select id="level" name="level" class="form-control">
+                  <option value="" data-i18n="contact.level_ph">Select your level</option>
+                  <option value="beginner">Beginner (A1–A2)</option>
+                  <option value="intermediate">Intermediate (B1–B2)</option>
+                  <option value="advanced">Advanced (C1–C2)</option>
+                  <option value="unsure">Not sure — I'd like a placement test</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom:var(--space-8);">
+                <label class="form-label" for="message" data-i18n="contact.msg_label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="5"
+                  aria-required="true"
+                  data-i18n-attr="placeholder:contact.msg_ph"
+                  placeholder="Tell us your goals or any questions you have..."
+                ></textarea>
+                <span class="form-error" id="message-error" role="alert" hidden></span>
+              </div>
+
+              <button type="submit" class="btn btn-cta btn-lg" style="width:100%;justify-content:center;" data-i18n="contact.submit_btn">
+                Send Message
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
