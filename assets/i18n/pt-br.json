@@ -10,6 +10,7 @@
     "lang_en":    "Switch to English",
     "lang_pt":    "Mudar para Português",
     "lang_zh":    "切换到中文",
+    "lang_es":    "Cambiar a Español",
     "open_menu":  "Abrir menu",
     "close_menu": "Fechar menu"
   },
@@ -23,7 +24,8 @@
     "contact_title": "Contato",
     "hours":         "Seg–Sex, 8h–20h",
     "rights":        "Todos os direitos reservados.",
-    "credits":       "Fotos: Unsplash & Pexels · Ícones: Phosphor Icons"
+    "credits":       "Fotos: Unsplash & Pexels · Ícones: Phosphor Icons",
+    "developed_by":  "Desenvolvido por"
   },
   "home": {
     "hero_label":    "Aprendizado acelerado de idiomas",
@@ -126,6 +128,30 @@
     "msg_label":     "Mensagem",
     "msg_ph":        "Conte seus objetivos ou tire suas dúvidas...",
     "submit_btn":    "Enviar Mensagem",
-    "success_msg":   "Sua mensagem foi enviada! Entraremos em contato em até 24 horas."
+    "success_msg":   "Sua mensagem foi enviada! Entraremos em contato em até 24 horas.",
+    "success_btn":   "Mensagem Enviada ✓"
+  },
+  "img": {
+    "hero_bg":         "Profissional adulto estudando em laptop em ambiente moderno e iluminado",
+    "about_story":     "Sala de aula da LingoUp com alunos e professor nativo",
+    "teacher_james":   "James Carter, professor de inglês na LingoUp",
+    "teacher_sofia":   "Sofía Ramírez, professora de espanhol na LingoUp",
+    "teacher_mei":     "Mei Zhang, professora de mandarim na LingoUp",
+    "teacher_liam":    "Liam O'Brien, Diretor Acadêmico da LingoUp",
+    "course_english":  "Profissionais em reunião de inglês para negócios",
+    "course_spanish":  "Alunos praticando espanhol em ambiente cultural vibrante",
+    "course_mandarin": "Profissional estudando caracteres chineses para negócios",
+    "blog_featured":   "Colegas em reunião de negócios, com uma mulher falando com confiança para o grupo",
+    "blog_1":          "Close-up de caracteres chineses manuscritos em papel com uma caneta",
+    "blog_2":          "Homem e mulher em conversa em café com laptop",
+    "blog_3":          "Adulto estudando com fones de ouvido e laptop"
+  },
+  "titles": {
+    "home":      "LingoUp Academy \u2014 Aprendizado Acelerado de Idiomas",
+    "courses":   "Cursos \u2014 LingoUp Academy",
+    "about":     "Sobre \u2014 LingoUp Academy",
+    "blog":      "Blog \u2014 LingoUp Academy",
+    "blog_post": "7 Express\u00f5es de Ingl\u00eas para Neg\u00f3cios \u2014 Blog LingoUp",
+    "contact":   "Contato e Matr\u00edcula \u2014 LingoUp Academy"
   }
 }

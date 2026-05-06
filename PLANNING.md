@@ -83,18 +83,83 @@ Suporte a múltiplos idiomas via arquivos JSON, sem dependências externas.
 
 ---
 
-### Site 2 — Escola de Idiomas (`language-school/`)
+### Site 2 — Escola de Idiomas (`language-school/`) ✅ CONCLUÍDO
 
+**Nome fictício:** LingoUp Academy  
 **Tom visual:** Moderno, jovial, colorido, acolhedor
 
-| Página | Seções principais |
+#### Identidade Visual
+
+| Papel | Cor | Hex |
+|---|---|---|
+| Primária | Verde esmeralda | `#059669` |
+| Secundária | Âmbar/dourado | `#D97706` |
+| Neutro claro (fundos) | Branco / cinza claro | `#F9FAFB` |
+| Texto principal | Cinza escuro | `#111827` |
+| Texto secundário | Cinza médio | `#6B7280` |
+
+#### Tipografia (Google Fonts)
+
+| Papel | Fonte | Estilo |
+|---|---|---|
+| Títulos | **Plus Jakarta Sans** | Moderna, arredondada, jovial |
+| Corpo / UI | **Inter** | Sem serifa, legível, moderna |
+
+#### Páginas
+
+| Página | Status | Seções principais |
+|---|---|---|
+| `index.html` | ✅ Completo | Hero com CTA, stats, cursos em destaque (3), como funciona (3 passos), professores (3 cards), CTA Banner |
+| `courses.html` | ✅ Completo | Page Hero, 3 course-cards detalhados (English/Spanish/Mandarin), diferenciais, FAQ |
+| `about.html` | ✅ Completo | Page Hero, história + foto, missão/visão/valores, metodologia, equipe (4 professores) |
+| `blog.html` | ✅ Completo | Page Hero, post destaque, grid de 3 artigos, CTA Banner |
+| `blog-post.html` | ✅ Completo | Page Hero com autor, corpo do artigo, sidebar (autor, categorias, CTA), seção More Articles |
+| `contact.html` | ✅ Completo | Page Hero, grid 2 colunas (info + mapa / formulário com validação JS acessível) |
+
+#### Imagens baixadas
+
+| Arquivo | Descrição | Fonte |
+|---|---|---|
+| `assets/images/hero/hero-bg.jpg` | Profissional adulto estudando em laptop em ambiente moderno e iluminado | Pexels |
+| `assets/images/hero/about-story.jpg` | Sala de aula da LingoUp com alunos e professor nativo | Pexels |
+| `assets/images/team/teacher-james.jpg` | James Carter, professor de inglês | Pexels |
+| `assets/images/team/teacher-sofia.jpg` | Sofía Ramírez, professora de espanhol | Pexels |
+| `assets/images/team/teacher-mei.jpg` | Mei Zhang, professora de mandarim | Pexels |
+| `assets/images/team/teacher-liam.jpg` | Liam O'Brien, Academic Director — homem 45–50 anos, óculos, terno escuro, pasta azul, fundo janela/tijolo | RDNE Stock project — Pexels |
+| `assets/images/courses/english.jpg` | Profissionais em reunião de Business English | Pexels |
+| `assets/images/courses/spanish.jpg` | Alunos praticando espanhol em ambiente cultural vibrante | Pexels |
+| `assets/images/courses/mandarin.jpg` | Profissional estudando caracteres chineses para negócios | Pexels |
+| `assets/images/blog/blog-featured.jpg` | Colegas em reunião de negócios, mulher falando para o grupo | RDNE Stock project — Pexels |
+| `assets/images/blog/blog-1.jpg` | Close-up de caracteres chineses manuscritos em papel com caneta | Vincent Knoop — Pexels |
+| `assets/images/blog/blog-2.jpg` | Homem e mulher em conversa em café com laptop | Kampus Production — Pexels |
+| `assets/images/blog/blog-3.jpg` | Adulto estudando com fones de ouvido e laptop | Pexels |
+
+#### Funcionalidades JS (`assets/js/main.js`)
+
+- `loadPartial()` — carrega header/footer via `fetch()`
+- `setActiveNav()` — marca link ativo baseado na URL atual
+- `initMobileNav()` — menu hamburger com suporte a teclado e Escape
+- `setFooterYear()` — ano dinâmico no footer
+- `initContactForm()` — validação de formulário com ARIA live regions e mensagem de sucesso fake
+- `initCounterAnimation()` — animação de contadores com `IntersectionObserver`, respeita `prefers-reduced-motion`
+
+#### Internacionalização (`assets/js/i18n.js`)
+
+| Item | Detalhe |
 |---|---|
-| `index.html` | Hero com CTA, cursos em destaque, depoimentos, professores, parceiros |
-| `courses.html` | Cards de idiomas disponíveis, níveis, carga horária, preço |
-| `about.html` | História da escola, metodologia, equipe de professores |
-| `blog.html` | Listagem de dicas de aprendizado |
-| `blog-post.html` | Template de artigo individual |
-| `contact.html` | Formulário de matrícula/contato, localização, redes sociais |
+| Idiomas disponíveis | Inglês (`en-us`), Português Brasil (`pt-br`), Mandarim (`zh-cn`), Espanhol (`es-es`) |
+| Arquivos de tradução | `assets/i18n/en-us.json`, `pt-br.json`, `zh-cn.json`, `es-es.json` |
+| Seleção de idioma | Botões de texto no header (`EN` / `PT` / `中文` / `ES`), persistidos via `localStorage` |
+| Tradução de texto | Atributo `data-i18n="chave"` nos elementos HTML |
+| Tradução de atributos | Atributo `data-i18n-attr="atributo:chave"` (ex: `aria-label`, `placeholder`, `alt`) |
+| Idioma padrão | `en-us` |
+| Escopo | Todas as 6 páginas + partials de header e footer, incluindo `alt` de imagens |
+
+#### Rodapé
+
+- Créditos de fotos: `Photos: Unsplash & Pexels · Icons: Phosphor Icons`
+- Desenvolvido por: **Renan Pina** (link para `linkedin.com/in/renanfpina`)
+- Texto do crédito traduzido nos 4 idiomas
 
 ---
 
@@ -203,12 +268,16 @@ sites/
 
 ### law-firm ✅ CONCLUÍDO
 
-### language-school
-- [ ] Nome fictício
-- [ ] Paleta de cores
-- [ ] Tipografia
-- [ ] Seleção de fotos
-- [ ] Textos de conteúdo fictício
+### language-school ✅ CONCLUÍDO
+- [x] Nome fictício — **LingoUp Academy**
+- [x] Paleta de cores — definida
+- [x] Tipografia — definida
+- [x] Seleção de fotos — 13 imagens locais com créditos Pexels
+- [x] Textos de conteúdo fictício — todas as 6 páginas
+- [x] Internacionalização — 4 idiomas (EN, PT-BR, ZH-CN, ES-ES)
+- [x] Formulário de contato — validação + mensagem de sucesso fake i18n
+- [x] Créditos e "Developed by Renan Pina" no rodapé
+- [x] `alt` das imagens com suporte a i18n
 
 ### a11y-consulting
 - [ ] Nome fictício
@@ -225,5 +294,5 @@ sites/
 ## Ordem de Desenvolvimento (proposta)
 
 1. `law-firm` — Escritório de Advocacia ✅ **CONCLUÍDO**
-2. `language-school` — Escola de Idiomas
+2. `language-school` — Escola de Idiomas ✅ **CONCLUÍDO**
 3. `a11y-consulting` — Consultoria de Acessibilidade

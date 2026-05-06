@@ -10,6 +10,7 @@
     "lang_en":    "Switch to English",
     "lang_pt":    "Mudar para Português",
     "lang_zh":    "切换到中文",
+    "lang_es":    "Cambiar a Español",
     "open_menu":  "打开菜单",
     "close_menu": "关闭菜单"
   },
@@ -23,7 +24,8 @@
     "contact_title": "联系方式",
     "hours":         "周一至周五，上午8时至晚上8时",
     "rights":        "版权所有。",
-    "credits":       "图片来源：Unsplash & Pexels · 图标：Phosphor Icons"
+    "credits":       "图片来源：Unsplash & Pexels · 图标：Phosphor Icons",
+    "developed_by":  "开发者："
   },
   "home": {
     "hero_label":    "快速语言学习",
@@ -126,6 +128,30 @@
     "msg_label":     "留言",
     "msg_ph":        "告诉我们您的目标或任何问题...",
     "submit_btn":    "发送消息",
-    "success_msg":   "您的消息已发送！我们将在24小时内与您联系。"
+    "success_msg":   "您的消息已发送！我们将在24小时内与您联系。",
+    "success_btn":   "消息已发送 ✓"
+  },
+  "img": {
+    "hero_bg":         "成人职场人士在明亮现代的环境中使用笔记本电脑学习",
+    "about_story":     "LingoUp学院课堂，学员与母语教师共同学习",
+    "teacher_james":   "James Carter，LingoUp英语教师",
+    "teacher_sofia":   "Sofía Ramírez，LingoUp西班牙语教师",
+    "teacher_mei":     "Mei Zhang，LingoUp普通话教师",
+    "teacher_liam":    "Liam O'Brien，LingoUp学术总监",
+    "course_english":  "专业人士参加商务英语会议",
+    "course_spanish":  "学员在充满活力的文化环境中练习西班牙语",
+    "course_mandarin": "职场人士学习商务汉字",
+    "blog_featured":   "同事参加商务会议，一位女士自信地向团队发言",
+    "blog_1":          "纸上手写汉字的特写镜头，旁边放着一支钢笔",
+    "blog_2":          "男女二人在咖啡馆交谈，桌上放着笔记本电脑",
+    "blog_3":          "成人学员戴着耳机使用笔记本电脑学习"
+  },
+  "titles": {
+    "home":      "LingoUp Academy \u2014 快速语言学习",
+    "courses":   "课程 \u2014 LingoUp Academy",
+    "about":     "关于我们 \u2014 LingoUp Academy",
+    "blog":      "博客 \u2014 LingoUp Academy",
+    "blog_post": "7个商务英语短语 \u2014 LingoUp博客",
+    "contact":   "联系与报名 \u2014 LingoUp Academy"
   }
 }

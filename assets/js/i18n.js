@@ -54,7 +54,7 @@ function applyTranslations(translations) {
   });
 
   // Sync the html[lang] attribute
-  const localeLangMap = { 'en-us': 'en', 'pt-br': 'pt-BR', 'zh-cn': 'zh-CN' };
+  const localeLangMap = { 'en-us': 'en', 'pt-br': 'pt-BR', 'zh-cn': 'zh-CN', 'es-es': 'es' };
   const activeLang = localStorage.getItem(I18N_STORAGE_KEY) || I18N_DEFAULT;
   document.documentElement.lang = localeLangMap[activeLang] || 'en';
 }

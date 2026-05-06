@@ -178,14 +178,17 @@ function initContactForm() {
     }
 
     // Success feedback
+    const successMsgEl = document.getElementById('form-success-msg');
+    const successBtnEl = document.getElementById('form-success-btn');
     if (liveRegion) {
-      liveRegion.textContent =
-        'Your enrollment request has been submitted! We will contact you shortly.';
+      liveRegion.textContent = successMsgEl
+        ? successMsgEl.textContent
+        : 'Your message was sent! We\'ll be in touch within 24 hours.';
     }
     form.reset();
     const submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) {
-      submitBtn.textContent = 'Request Sent ✓';
+      submitBtn.textContent = successBtnEl ? successBtnEl.textContent : 'Request Sent ✓';
       submitBtn.disabled = true;
     }
   });

@@ -10,6 +10,7 @@
     "lang_en":    "Switch to English",
     "lang_pt":    "Mudar para Português",
     "lang_zh":    "切换到中文",
+    "lang_es":    "Cambiar a Español",
     "open_menu":  "Open menu",
     "close_menu": "Close menu"
   },
@@ -23,7 +24,8 @@
     "contact_title":"Contact",
     "hours":        "Mon–Fri, 8am–8pm",
     "rights":       "All rights reserved.",
-    "credits":      "Photos: Unsplash & Pexels · Icons: Phosphor Icons"
+    "credits":      "Photos: Unsplash & Pexels · Icons: Phosphor Icons",
+    "developed_by": "Developed by"
   },
   "home": {
     "hero_label":    "Fast-track language learning",
@@ -126,6 +128,30 @@
     "msg_label":     "Message",
     "msg_ph":        "Tell us your goals or any questions you have...",
     "submit_btn":    "Send Message",
-    "success_msg":   "Your message was sent! We'll be in touch within 24 hours."
+    "success_msg":   "Your message was sent! We'll be in touch within 24 hours.",
+    "success_btn":   "Request Sent ✓"
+  },
+  "img": {
+    "hero_bg":         "Adult professional studying on a laptop in a bright, modern environment",
+    "about_story":     "LingoUp Academy classroom with students and a native teacher",
+    "teacher_james":   "James Carter, English teacher at LingoUp",
+    "teacher_sofia":   "Sofía Ramírez, Spanish teacher at LingoUp",
+    "teacher_mei":     "Mei Zhang, Mandarin teacher at LingoUp",
+    "teacher_liam":    "Liam O'Brien, Academic Director at LingoUp",
+    "course_english":  "Professionals in a business English meeting",
+    "course_spanish":  "Students practising Spanish in a vibrant cultural setting",
+    "course_mandarin": "Professional studying Mandarin Chinese characters for business",
+    "blog_featured":   "Coworkers engaged in a business meeting, with a woman speaking confidently to the group",
+    "blog_1":          "Close-up of handwritten Mandarin Chinese characters on paper with a pen",
+    "blog_2":          "Man and woman having a discussion in a café, with a laptop on the table",
+    "blog_3":          "Adult learner studying with headphones and laptop"
+  },
+  "titles": {
+    "home":      "LingoUp Academy \u2014 Fast-track Language Learning",
+    "courses":   "Courses \u2014 LingoUp Academy",
+    "about":     "About \u2014 LingoUp Academy",
+    "blog":      "Blog \u2014 LingoUp Academy",
+    "blog_post": "7 Business English Phrases \u2014 LingoUp Blog",
+    "contact":   "Contact & Enrollment \u2014 LingoUp Academy"
   }
 }
