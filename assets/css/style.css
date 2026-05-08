@@ -416,6 +416,12 @@ h4 { font-size: var(--fs-lg); }
   gap: var(--space-8);
 }
 
+/* Language switcher item inside nav links (desktop) */
+.nav__links-lang {
+  list-style: none;
+  margin-left: auto;
+}
+
 .nav__link {
   font-family: var(--font-heading);
   font-size: var(--fs-sm);
@@ -512,14 +518,17 @@ h4 { font-size: var(--fs-lg); }
     box-shadow: var(--shadow-lg);
     transform: translateY(-110%);
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-    transition: transform var(--transition-smooth), opacity var(--transition-smooth);
+    transition: transform var(--transition-smooth), opacity var(--transition-smooth), visibility 0s linear 300ms;
   }
 
   .nav__links.is-open {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
     pointer-events: all;
+    transition: transform var(--transition-smooth), opacity var(--transition-smooth), visibility 0s linear 0s;
   }
 
   .nav__link {
@@ -529,7 +538,14 @@ h4 { font-size: var(--fs-lg); }
   }
 
   .nav__link::after { display: none; }
-  .nav__actions .btn { display: none; }
+
+  .nav__links-lang {
+    margin-left: 0;
+    padding-top: var(--space-4);
+    border-bottom: none;
+  }
+
+  .nav__actions { display: none; }
   .nav__hamburger { display: flex; }
 }
 
